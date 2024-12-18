@@ -1,0 +1,22 @@
+{
+    "total_size": 14212648,
+    "formatted_total_size": "13.55 MB",
+    "num_files": 3,
+    "files": [
+        {
+            "name": "ra.txt",
+            "size": 12,
+            "formatted_size": "12.00 B"
+        },
+        {
+            "name": "The Strokes \u2013 Last Nite (Later Archive 2006).mp3",
+            "size": 4051577,
+            "formatted_size": "3.86 MB"
+        },
+        {
+            "name": "The Voidz - Where No Eagles Fly.mp3",
+            "size": 10161059,
+            "formatted_size": "9.69 MB"
+        }
+    ]
+}

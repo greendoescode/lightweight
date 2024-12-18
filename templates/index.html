@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DL Files - Home</title>
+  </head>
+  <body>
+    <h1>Apolga Files</h1>
+
+    <h2>File Statistics</h2>
+    <ul>
+      <li>Total Size of Uploaded Files: {{ total_size }}</li>
+      <li>Number of Files Uploaded: {{ num_files }}</li>
+    </ul>
+
+    <h2>Uploaded Files</h2>
+    <ul>
+      {% for file in files %}
+      <li><a href="/static/{{file.name}}">{{ file.name }}</a> - {{ file.size|filesizeformat }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
