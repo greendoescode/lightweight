@@ -91,4 +91,4 @@ async def get_static_file(name: str) -> Response:
         return Response("File not found", status=404)
 
 if __name__ == "__main__":
-    app.run(host="localhost")
+    app.run(host="0.0.0.0", port="25580")
