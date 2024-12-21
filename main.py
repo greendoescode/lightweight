@@ -73,6 +73,8 @@ async def upload_file():
         files = await request.files 
         uploaded_file = files.get("file")
         if uploaded_file:
+            if not os.path.exists(app.static_folder):
+                os.makedirs(app.static_folder)
             file_path = os.path.join(app.static_folder, uploaded_file.filename)
             await uploaded_file.save(file_path)
             update_files_json()
